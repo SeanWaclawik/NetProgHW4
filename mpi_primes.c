@@ -83,6 +83,7 @@ int main(int argc, char **argv)
 // Does the actual work of finding the primes
 int generatePrimes(unsigned int num, int mpi_commsize, int mpi_myrank) {
     int flag, count, i = 0;
+    count = 0;
     unsigned int curr = 3+(2*mpi_myrank);
 
     while (curr < num) {
